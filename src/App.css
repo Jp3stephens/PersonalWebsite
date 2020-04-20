@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  flex: auto;
+  background: red
+}
+
+.outerwrap {
+  color: blue;
+  flex: auto;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  width: 228px;
+  height: calc(100% - 10px);
+  padding: 10px 10px 10px;
+}
+
+.middleContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0.5 rem 2rem;
+  content: white;
+  align-items: center;
+  
+}
