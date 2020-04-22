@@ -1,19 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Nav from './components/Nav'
+import Main from './components/Main';
 
-function App() {
+const App = () => {
   return (
+    <div className="outerWrap">
     <div className="App">
-      <div className="outerwrap">
-        <div className="sideBar">
-          <div className="middleContainer">
-          middleContainer
-          </div>
-        side
-        </div>
-      outerwrap
-      </div>
+      <Nav/>
+      <Main/>
+    </div>
+    <div className="mainControls">Jack is very cool </div>
     </div>
   );
 }
