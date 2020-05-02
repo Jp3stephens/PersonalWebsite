@@ -10,7 +10,7 @@ const App = () => {
       <Nav/>
       <Main/>
     </div>
-    <div className="mainControls">Jack is very cool </div>
+    <div className="mainControls">Doing stuff </div>
     </div>
   );
 }

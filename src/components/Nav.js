@@ -9,16 +9,14 @@ const Nav = () => {
         </div>
         <ul>
           <li className="active">
-          Home</li>
+          Projects</li>
           <li>
-          Blog</li>
-          <li>
-          My Projects</li>
-          <li>Resume</li>
+          Resume</li>
+          <li>Blog</li>
         </ul>
         <div className="cookies">
-          <span>Cookies</span>
-          <span>Privacy Policy</span>
+          <span>Please</span>
+          <span>Hire Me</span>
         </div>
     </div>
   )
