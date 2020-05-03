@@ -18,7 +18,7 @@ const Main = () => {
           <Route path="/blog" exact >
             Blog
           </Route>
-          <Route path = "/project/:id"component={Projects}><h1>Glut</h1></Route>
+          <Route path = "/project/:id"component={Projects}><h1>This my Project!</h1></Route>
         </Switch>
       </div>
     </div>
