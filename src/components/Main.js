@@ -7,6 +7,7 @@ const Main = () => {
       <div className = "mainContent">
         <h1>Projects </h1>
         <div className="cardsWrap">
+          <span className="seeGithub">See Github</span>
           <div className="cardsWrapInner">
             <div className="card">
               <div className="cardImage">

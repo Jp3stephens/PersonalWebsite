@@ -132,11 +132,13 @@ padding-top:3rem;
 
 .cardsWrap {
   padding-bottom: 1.8rem;
+  .seeGithub {
+    float:right; 
+    color: grey; 
+  }
   .cardsWrapInner {
     display: flex; 
-    
-    
-    
+    margin-bottom: 1.2rem; 
   }
   .card {
     background: $greyLighter;
