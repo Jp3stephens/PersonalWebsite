@@ -1,61 +1,25 @@
 import React from 'react';
-import {ReactComponent as InfoIcon} from '../logo.svg'
+import Categories from './Categories'
+import {Switch, Route} from 'react-router-dom'; 
+import Projects from './Projects'
 const Main = () => {
   return (
     <div className="main">
       <div className="upperNav"> \(-_-)/ </div>
       <div className = "mainContent">
-        <h1>Projects </h1>
-        <div className="cardsWrap">
-          <span className="seeGithub">See Github</span>
-          <div className="cardsWrapInner">
-            <div className="card">
-              <div className="cardImage">
-              <img src="https://images.unsplash.com/photo-1527068589345-b736a7de9cc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Pic1"/>
-              </div>
-                <div className="cardContent">
-                  <h3>
-                  Project - Name 
-                  </h3>
-                </div>
-                  <span className="infoIcon">
-                    <InfoIcon/>
-                  </span>
-          
-            </div>
-            <div className="card">
-              <div className="cardImage">
-              <img src="https://images.unsplash.com/photo-1527068589345-b736a7de9cc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Pic1"/>
-              </div>
-                <div className="cardContent">
-                  <h3>
-                  Project - Name 
-                  </h3>
-                </div>
-                  <span className="infoIcon">
-                    <InfoIcon/>
-                  </span>
-          
-            </div>
-            <div className="card">
-              <div className="cardImage">
-              <img src="https://images.unsplash.com/photo-1527068589345-b736a7de9cc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Pic1"/>
-              </div>
-                <div className="cardContent">
-                  <h3>
-                  Project - Name 
-                  </h3>
-                </div>
-                  <span className="infoIcon">
-                    <InfoIcon/>
-                  </span>
-          
-            </div>
-          </div>
-        </div>
-          
-        
-        
+        <Switch>
+          <Route path="/" exact>
+          <h1>Projects </h1>  
+          <Categories/>
+          </Route>
+          <Route path="/Resume" exact>
+            Resume
+          </Route>
+          <Route path="/blog" exact >
+            Blog
+          </Route>
+          <Route path = "/project/:id"component={Projects}><h1>Glut</h1></Route>
+        </Switch>
       </div>
     </div>
   )
