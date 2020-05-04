@@ -2,7 +2,9 @@ import React from 'react';
 import Categories from './Categories'
 import {Switch, Route} from 'react-router-dom'; 
 import Projects from './Projects'
+import {Document, Page} from 'react-pdf'; 
 const Main = () => {
+  
   return (
     <div className="main">
       <div className="upperNav"> \(-_-)/ </div>
@@ -13,7 +15,10 @@ const Main = () => {
           <Categories/>
           </Route>
           <Route path="/Resume" exact>
-            Resume
+            <Document file = "./StephensAprilResume copy.pdf">
+              <Page/>
+              Some other stuff heir
+            </Document>
           </Route>
           <Route path="/blog" exact >
             Blog
